@@ -1,0 +1,47 @@
+.container{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem;
+
+}
+.a{
+    padding: 5rem;
+    gap:1rem;
+    margin:1rem;
+    font-size: 3rem;
+    border-radius: 1rem;
+    border: .1rem double gray;
+}
+@keyframes slide {
+    0%{
+        transform: translate(0px,0rem);
+    }
+    33%{
+        transform: translate(600px,2rem) rotate(180deg);
+    }
+    66%{
+        transform: translate(-600px,-2rem) rotate(-180deg);
+    }
+    100%{
+        transform: translate(0px,0rem) 
+    }
+}
+.a:first-child{
+    background-color: aquamarine;
+    /* animation-name: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: 5;
+     */
+     animation: slide 5s ease-in-out 2s 5 normal forwards;
+}
+.a:nth-child(2){
+    background-color: aqua;
+}
+.a:nth-child(3){
+    background-color: rgb(33, 168, 168);
+
+}
